@@ -10,12 +10,12 @@ Lombok: https://projectlombok.org/
 Formix: https://formik.org/
 
 
+
 ## Correr la aplicación
 
-El proyecto es un proyecto Maven estándar. Para ejecutarlo desde la línea de comandos, escriba `mvnw` (Windows), o `./mvnw` (Mac & Linux), luego abrir
-http://localhost:8080 en el navegador.
+El proyecto es un proyecto Maven estándar. Si se desea ejectuar el proyecto desde los fuentes, puede ejecutarlos desde la línea de comandos, escribiendo `mvnw` (Windows), o `./mvnw` (Mac & Linux) y luego abrir http://localhost:8080 en el navegador. Esto requiere tener Maven instalado. 
 
-También puede importar el proyecto a su IDE de elección como lo haría con cualquier proyecto de Maven.
+Se agrega al repositorio un jar para testear la app sin necesidad de tener maven. Se agrega en `target` de este proyecto el jar generado, para que se pueda probar sin necesidad de descargar dependencias. Se ejecuta usando `java -jar target/pj01app-1.0-SNAPSHOT.jar` (NOTA, reemplace `target` por el camino donde coloca el jar para ejecutar), luego abrir http://localhost:8080 en el navegador.
 
 ## Uso de la Aplicación
 
@@ -29,10 +29,10 @@ About : Se muestra el motivo de la apps.
 
 ## Paso a producción
 
-Para crear una compilación de producción, llame `mvnw clean package -Pproduction` (Windows),
-o `./mvnw clean package -Pproduction` (Mac & Linux).
-Esto creará un archivo JAR con todas las dependencias y recursos de front-end, listo para implementarse. El archivo se puede encontrar en la targetcarpeta después de que se complete la compilación.
-Una vez que se crea el archivo JAR, puede ejecutarlo usando `java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTA, reemplazar `myapp-1.0-SNAPSHOT.jar` con el nombre de su jar).
+Para crear una compilación de producción, ejecutar `mvnw clean package -Pproduction` (Windows), o `./mvnw clean package -Pproduction` (Mac & Linux). Antes seguir las recomendaciones para modificar el archivo POM.xml en https://hilla.dev/docs/react/guides/production/production-build. Para crear el jar solo agrego la propiedad `<vaadin.productionMode>true</vaadin.productionMode>` en el perfil `production`.
+
+Esto crea un archivo JAR con todas las dependencias y recursos de front-end, listo para implementarse. El archivo se encuentra en la carpeta  `target`.
+Una vez que se crea el archivo JAR, se ejecuta usando `java -jar target/pj01app-1.0-SNAPSHOT.jar` (NOTA, reemplace `target` por el camino donde coloca el jar para ejecutar).
 
 ## Estructura del Proyecto
 
