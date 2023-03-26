@@ -20,8 +20,11 @@ También puede importar el proyecto a su IDE de elección como lo haría con cua
 ## Uso de la Aplicación
 
 Home: Por defecto muestra todos los Edificios cargados, y espera se seleccione el edificio para el que desea ver las dependencias. Si se lo desea, se puede filtrar un/os Edificios usando el filtro para tal fin.
+
 Edificio: Gestion de Edificios. Permite crear nuevos, Modificar (Usando el boton o Seleccionando la Fila) y Eliminarlos. Si no se puede ejecutar la accion se mostrara una notificacion emergente marcando el error. Para entener lo que pasa, se deja el error como viene, aunque se entiende que debe ser distinto en un app en produccion. 
+
 Dependencia: Gestion de Dependencias. Permite crear nuevas, Modificar (Usando el boton o Seleccionando la Fila) y Eliminarlas. Si no se puede ejectuar la accion  se mostrara una notificacion emergente marcando el error. Para entener lo que pasa, se deja el error como viene, aunque se entiende que debe ser distinto en un app en produccion. 
+
 About : Se muestra el motivo de la apps.
 
 ## Paso a producción
