@@ -1,55 +1,45 @@
 # pj01app
  App Test PJ Neuquen 2023
  
-# Custom project from Hilla
+# Proyecto de Hilla
 
-This project can be used as a starting point to create your own Hilla application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+Para este proyecto se utilizo el punto de partida que propone Hilla, para luego crear nuestra aplicación Hilla con Spring Boot. Contiene toda la configuración necesaria y algunos archivos de marcador de posición para que pueda comenzar.
+Se usa una base de datos precargada en memoria con datos de test. 
 
-## Running the application
+## Correr la aplicación
 
-The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+El proyecto es un proyecto Maven estándar. Para ejecutarlo desde la línea de comandos, escriba `mvnw` (Windows), o `./mvnw` (Mac & Linux), luego abrir
+http://localhost:8080 en el navegador.
 
-You can also import the project to your IDE of choice as you would with any
-Maven project.
+También puede importar el proyecto a su IDE de elección como lo haría con cualquier proyecto de Maven.
 
-## Deploying to Production
+## Paso a producción
 
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
-
-Once the JAR file is built, you can run it using
-`java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTE, replace
-`myapp-1.0-SNAPSHOT.jar` with the name of your jar).
+Para crear una compilación de producción, llame `mvnw clean package -Pproduction` (Windows),
+o `./mvnw clean package -Pproduction` (Mac & Linux).
+Esto creará un archivo JAR con todas las dependencias y recursos de front-end, listo para implementarse. El archivo se puede encontrar en la targetcarpeta después de que se complete la compilación.
+Una vez que se crea el archivo JAR, puede ejecutarlo usando `java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTA, reemplazar `myapp-1.0-SNAPSHOT.jar` con el nombre de su jar).
 
 ## Project structure
 
 <table style="width:100%; text-align: left;">
-  <tr><th>Directory</th><th>Description</th></tr>
-  <tr><td><code>frontend/</code></td><td>Client-side source directory</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.html</code></td><td>HTML template</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.ts</code></td><td>Frontend 
-entrypoint, bootstraps a React application</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>routes.tsx</code></td><td>React Router routes definition</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>MainLayout.tsx</code></td><td>Main 
-layout component, contains the navigation menu, uses <a href="https://hilla.dev/docs/react/components/app-layout">
+  <tr><th>Directorio</th><th>Descripcion</th></tr>
+  <tr><td><code>frontend/</code></td><td>Directorio de fuentes del lado del cliente</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.html</code></td><td>Plantilla html</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.ts</code></td><td>Punto de entrada frontend, arranca una aplicación React
+</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>routes.tsx</code></td><td>Definición de rutas de React Router</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>MainLayout.tsx</code></td><td>Componente de diseño principal, contiene el menú de navegación, usa <a href="https://hilla.dev/docs/react/components/app-layout">
 App Layout</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>views/</code></td><td>UI view 
-components</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>themes/</code></td><td>Custom  
-CSS styles</td></tr>
-  <tr><td><code>src/main/java/&lt;groupId&gt;/</code></td><td>Server-side 
-source directory, contains the server-side Java views</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>Application.java</code></td><td>Server entry-point</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>views/</code></td><td>Componentes de la vista de la interfaz de usuario</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>themes/</code></td><td>Estilos CSS personalizados</td></tr>
+  <tr><td><code>src/main/java/&lt;groupId&gt;/</code></td><td>Directorio de origen del lado del servidor, contiene las vistas de Java del lado del servidor</td></tr>
+  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>Application.java</code></td><td>Punto de entrada del servidor</td></tr>
 </table>
 
-## Useful links
+## Enlaces útiles
 
-- Read the documentation at [hilla.dev/docs](https://hilla.dev/docs/).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/hilla) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin/hilla).
+- Lea la documentación en [hilla.dev/docs](https://hilla.dev/docs/).
+- Haz preguntas en [Stack Overflow](https://stackoverflow.com/questions/tagged/hilla) o únete a nuestro [Discord channel](https://discord.gg/MYFq5RTbBn).
+- Informe de problemas, cree solicitudes de incorporación de cambios en [GitHub](https://github.com/vaadin/hilla).
 
