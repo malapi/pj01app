@@ -16,7 +16,7 @@ Formix: https://formik.org/
 
 El proyecto es un proyecto Maven estándar. Si se desea ejectuar el proyecto desde los fuentes, puede ejecutarlos desde la línea de comandos, escribiendo `mvnw` (Windows), o `./mvnw` (Mac & Linux) y luego abrir http://localhost:8080 en el navegador. Esto requiere tener Maven instalado. 
 
-Se agrega al repositorio un jar para testear la app sin necesidad de tener maven. Se agrega en `target` de este proyecto el jar generado, para que se pueda probar sin necesidad de descargar dependencias. Se ejecuta usando `java -jar target/pj01app-1.0-SNAPSHOT.jar` (NOTA, reemplace `target` por el camino donde coloca el jar para ejecutar), luego abrir http://localhost:8080 en el navegador.
+Se agrega al repositorio un jar para testear la app sin necesidad de tener maven instalado. Se agrega en `jar_prod` de este proyecto el jar generado, para que se pueda probar sin necesidad de descargar dependencias. Se ejecuta usando `java -jar jar_prod/pj01app-1.0-SNAPSHOT.jar` (NOTA, reemplace `jar_prod` por el camino donde coloca el jar para ejecutar), luego abrir http://localhost:8080 en el navegador. Se requiere Java 17.X de 64bit instalado en su pc. 
 
 ## Uso de la Aplicación
 
