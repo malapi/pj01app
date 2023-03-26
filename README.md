@@ -5,6 +5,10 @@
 
 Para este proyecto se utilizo el punto de partida que propone Hilla, para luego crear nuestra aplicación Hilla con Spring Boot. Contiene toda la configuración necesaria y algunos archivos de marcador de posición para que pueda comenzar.
 Se usa una base de datos precargada en memoria con datos de test. 
+Para el desarrollo, ademas se uso:
+Lombok: https://projectlombok.org/
+Formix: https://formik.org/
+
 
 ## Correr la aplicación
 
@@ -13,19 +17,19 @@ http://localhost:8080 en el navegador.
 
 También puede importar el proyecto a su IDE de elección como lo haría con cualquier proyecto de Maven.
 
-## Paso a producción
-
-Para crear una compilación de producción, llame `mvnw clean package -Pproduction` (Windows),
-o `./mvnw clean package -Pproduction` (Mac & Linux).
-Esto creará un archivo JAR con todas las dependencias y recursos de front-end, listo para implementarse. El archivo se puede encontrar en la targetcarpeta después de que se complete la compilación.
-Una vez que se crea el archivo JAR, puede ejecutarlo usando `java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTA, reemplazar `myapp-1.0-SNAPSHOT.jar` con el nombre de su jar).
-
 ## Uso de la Aplicación
 
 Home: Por defecto muestra todos los Edificios cargados, y espera se seleccione el edificio para el que desea ver las dependencias. Si se lo desea, se puede filtrar un/os Edificios usando el filtro para tal fin.
 Edificio: Gestion de Edificios. Permite crear nuevos, Modificar (Usando el boton o Seleccionando la Fila) y Eliminarlos. Si no se puede ejecutar la accion se mostrara una notificacion emergente marcando el error. Para entener lo que pasa, se deja el error como viene, aunque se entiende que debe ser distinto en un app en produccion. 
 Dependencia: Gestion de Dependencias. Permite crear nuevas, Modificar (Usando el boton o Seleccionando la Fila) y Eliminarlas. Si no se puede ejectuar la accion  se mostrara una notificacion emergente marcando el error. Para entener lo que pasa, se deja el error como viene, aunque se entiende que debe ser distinto en un app en produccion. 
 About : Se muestra el motivo de la apps.
+
+## Paso a producción
+
+Para crear una compilación de producción, llame `mvnw clean package -Pproduction` (Windows),
+o `./mvnw clean package -Pproduction` (Mac & Linux).
+Esto creará un archivo JAR con todas las dependencias y recursos de front-end, listo para implementarse. El archivo se puede encontrar en la targetcarpeta después de que se complete la compilación.
+Una vez que se crea el archivo JAR, puede ejecutarlo usando `java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTA, reemplazar `myapp-1.0-SNAPSHOT.jar` con el nombre de su jar).
 
 ## Estructura del Proyecto
 
