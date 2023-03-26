@@ -5,6 +5,7 @@
 
 Para este proyecto se utilizo el punto de partida que propone Hilla, para luego crear nuestra aplicación Hilla con Spring Boot. Contiene toda la configuración necesaria y algunos archivos de marcador de posición para que pueda comenzar.
 Se usa una base de datos precargada en memoria con datos de test. 
+
 Para el desarrollo, ademas se uso:
 Lombok: https://projectlombok.org/
 Formix: https://formik.org/
